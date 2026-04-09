@@ -6,8 +6,8 @@ talabalar = ["Zafar", "Malika", "Ali", "Gulnora", "Bekzod"]
 
 @app.route('/talabalar')
 def talabalar_royxati():
-    talabalar_saralangan = sorted(talabalar)  # alfavit bo‘yicha saralash
-    umumiy_soni = len(talabalar_saralangan)   # umumiy son
+    talabalar_saralangan = sorted(talabalar)  
+    umumiy_soni = len(talabalar_saralangan)   
     return render_template('talabalar.html', talabalar=talabalar_saralangan, soni=umumiy_soni)
 
 if __name__ == '__main__':
